@@ -2,16 +2,20 @@ name: PR Checklist
 
 on: [workflow_call, workflow_dispatch, pull_request]
 
+permissions: read-all
+
 jobs:
   checklist:
     permissions:
-      # required for actions/checkout (@see https://github.com/actions/checkout/issues/254#issuecomment-899182888)
+      # for actions/checkout to fetch code
+      # @see https://github.com/actions/checkout/issues/254#issuecomment-899182888
+      # @see https://github.com/actions/checkout/pull/653
       contents: read
       pull-requests: write
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       # @see https://github.com/wyozi/contextual-qa-checklist-action
       - uses: wyozi/contextual-qa-checklist-action@c063201bfa7fe8e9f72fb70ed2fe8cc0718c34c6
