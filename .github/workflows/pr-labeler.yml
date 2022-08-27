@@ -1,6 +1,6 @@
 name: PR Labeler
 
-on: [workflow_call, workflow_dispatch, pull_request_target]
+on: [workflow_call, workflow_dispatch, pull_request]
 
 jobs:
   triage:
@@ -8,6 +8,7 @@ jobs:
       contents: read
       pull-requests: write
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       # @see https://github.com/actions/labeler
       - uses: actions/labeler@e54e5b338fbd6e6cdb5d60f51c22335fc57c401e
