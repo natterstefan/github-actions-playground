@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # @see https://github.com/actions/first-interaction
-      - uses: actions/first-interaction@dafa9ae191faeec3f6b68445495727a43143b42a
+      - uses: actions/first-interaction@bd33205aa5c96838e10fd65df0d01efd613677c1
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           issue-message:
