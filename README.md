@@ -5,6 +5,11 @@
 - [GitHub Actions: Control permissions for GITHUB_TOKEN | GitHub Changelog](https://github.blog/changelog/2021-04-20-github-actions-control-permissions-for-github_token/)
 - [Automatic token authentication - GitHub Docs](https://docs.github.com/en/actions/security-guides/automatic-token-authentication#permissions-for-the-github_token)
 - [step-security/secure-workflows: Secure GitHub Actions CI/CD workflows via automated remediations](https://github.com/step-security/secure-workflows)
+- ATTENTION: `pull_request_target`: "For workflows that are triggered by the
+  `pull_request_target` event, the `GITHUB_TOKEN` is granted read/write
+  repository permission unless the permissions key is specified and the workflow
+  can access secrets, even when it is triggered from a fork.
+  ([src](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#pull_request_target))
 
 ## Resources
 
