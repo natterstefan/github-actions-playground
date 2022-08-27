@@ -11,11 +11,9 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v2
 
       # @see https://github.com/wyozi/contextual-qa-checklist-action
-      - name: Checklist
-        uses: wyozi/contextual-qa-checklist-action@c063201bfa7fe8e9f72fb70ed2fe8cc0718c34c6
+      - uses: wyozi/contextual-qa-checklist-action@c063201bfa7fe8e9f72fb70ed2fe8cc0718c34c6
         with:
           gh-token: ${{ secrets.GITHUB_TOKEN }}
