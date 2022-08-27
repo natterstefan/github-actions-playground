@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # @see https://github.com/mheap/require-checklist-action
-      - uses: mheap/require-checklist-action@2d826a59e6d499e89051c8e569c5daafbd67818d
+      - uses: mheap/require-checklist-action@e711a3246e9ecbeb6bddb7c8b0fc7ee8b5e1ba24
         with:
           # If this is true and there are no checklists detected, the action
           # will fail
