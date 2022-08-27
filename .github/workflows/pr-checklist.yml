@@ -13,6 +13,6 @@ jobs:
 
       # @see https://github.com/marketplace/actions/contextual-qa-checklists
       - name: Checklist
-        uses: wyozi/contextual-qa-checklist-action@c063201bfa7fe8e9f72fb70ed2fe8cc0718c34c6
+        uses: wyozi/contextual-qa-checklist-action@27696c9016d0f9759baaccd2cf5f3002c38d3801
         with:
           gh-token: ${{ secrets.GITHUB_TOKEN }}
