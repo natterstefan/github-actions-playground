@@ -1,0 +1,19 @@
+name: PR Approved Label
+
+# Alternatives
+# - https://github.com/abinoda/label-when-approved-action
+
+on: [workflow_call, workflow_dispatch, pull_request_review]
+
+jobs:
+  triage:
+    permissions:
+      pull-requests: write
+    runs-on: ubuntu-latest
+    steps:
+      # see https://github.com/ableco/label-when-approved-action
+      - uses: ableco/label-when-approved-action@4478ec11d28e8b83e37a249e7cd840022465eb09
+        with:
+          approvals: 1
+          add-label: approved
+          remove-label: "work in progress"

@@ -1,0 +1,19 @@
+name: Misc First Interaction
+
+on: [workflow_call, workflow_dispatch, pull_request, issues]
+
+jobs:
+  checklist:
+    permissions:
+      issues: write
+      pull-requests: write
+    runs-on: ubuntu-latest
+    steps:
+      # @see https://github.com/actions/first-interaction
+      - uses: actions/first-interaction@dafa9ae191faeec3f6b68445495727a43143b42a
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          issue-message:
+            "# Hello\nLooks like this is the first issue you created."
+          pr-message:
+            "# Hello\nLooks like this is the first pull request you created."

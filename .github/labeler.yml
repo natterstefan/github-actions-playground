@@ -1,0 +1,5 @@
+# Config file of .github/workflows/pr-labeler.yml workflow
+
+# Add '@domain/core' label to any change within the 'core' package
+chore:
+  - ./github/workflows/*

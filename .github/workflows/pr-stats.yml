@@ -1,0 +1,19 @@
+name: PR Stats
+
+# ATTENTION: This Action sends telemetry data to Mixpanel!
+# @see https://github.com/flowwer-dev/pull-request-stats/blob/ac5c6eb7c6f48b0e12253dd6cd511a81fd088570/src/services/telemetry/sendStart.js
+
+on:
+  workflow_call:
+  workflow_dispatch:
+  pull_request:
+    types: [opened]
+
+jobs:
+  stats:
+    permissions:
+      pull-requests: write
+    runs-on: ubuntu-latest
+    steps:
+      # @see https://github.com/flowwer-dev/pull-request-stats
+      - uses: flowwer-dev/pull-request-stats@ac5c6eb7c6f48b0e12253dd6cd511a81fd088570

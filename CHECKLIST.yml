@@ -1,0 +1,6 @@
+# see https://github.com/marketplace/actions/contextual-qa-checklists
+paths:
+  "README.md":
+    - Did you remember to add or update the all contributors list?
+  ".github/workflows/**":
+    - Did you add links to the GitHub actions repository or marketplace page?

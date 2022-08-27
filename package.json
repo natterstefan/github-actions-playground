@@ -1,0 +1,11 @@
+{
+  "name": "github-actions-playground",
+  "private": true,
+  "author": "Stefan Natter (https://natterstefan.me/)",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.23.0",
+    "eslint-config-ns": "^3.3.0",
+    "prettier": "^2.7.1"
+  }
+}
