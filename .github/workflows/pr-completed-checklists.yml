@@ -5,6 +5,7 @@ on: [workflow_call, workflow_dispatch, pull_request, issues]
 jobs:
   review-checklists:
     permissions:
+      issues: write
       pull-requests: write
     runs-on: ubuntu-latest
     timeout-minutes: 20
