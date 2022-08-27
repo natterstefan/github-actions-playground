@@ -7,6 +7,7 @@ jobs:
     permissions:
       pull-requests: write
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       # @see https://github.com/mheap/require-checklist-action
       - uses: mheap/require-checklist-action@2d826a59e6d499e89051c8e569c5daafbd67818d
