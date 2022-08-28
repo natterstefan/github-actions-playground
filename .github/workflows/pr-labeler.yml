@@ -8,7 +8,7 @@ jobs:
       contents: read
       pull-requests: write
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 5
     steps:
       # @see https://github.com/actions/labeler
       - uses: actions/labeler@e54e5b338fbd6e6cdb5d60f51c22335fc57c401e

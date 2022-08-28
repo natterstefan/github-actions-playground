@@ -10,7 +10,7 @@ jobs:
     permissions:
       pull-requests: write
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 5
     steps:
       # see https://github.com/ableco/label-when-approved-action
       - uses: ableco/label-when-approved-action@4478ec11d28e8b83e37a249e7cd840022465eb09

@@ -7,6 +7,7 @@ jobs:
     permissions:
       pull-requests: write
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     steps:
       # @see https://github.com/eps1lon/actions-label-merge-conflict
       - uses: eps1lon/actions-label-merge-conflict@c456fea12157020436b8e8fe561d51e053380e0b
