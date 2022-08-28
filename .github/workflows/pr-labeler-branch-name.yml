@@ -1,0 +1,22 @@
+# @see https://github.com/TimonVS/pr-labeler-action
+name: PR Labeler
+
+on:
+  pull_request:
+    types: [opened]
+
+permissions:
+  contents: read
+
+jobs:
+  pr-labeler:
+    runs-on: ubuntu-latest
+    permissions:
+      # @see https://github.com/TimonVS/pr-labeler-action/issues/58
+      pull-requests: write # for TimonVS/pr-labeler-action to add labels in PR
+    steps:
+      - uses: TimonVS/pr-labeler-action@b47402568cce2e3e871eba362e7268d5a8fb54cc
+        with:
+          configuration-path: .github/pr-labeler.yml # optional, .github/pr-labeler.yml is the default value
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
