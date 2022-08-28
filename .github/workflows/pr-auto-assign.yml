@@ -8,7 +8,7 @@ on:
     types: [opened, ready_for_review]
 
 jobs:
-  check-merge-conflict:
+  check-auto-assign:
     permissions:
       pull-requests: write
     runs-on: ubuntu-latest

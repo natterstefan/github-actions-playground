@@ -1,0 +1,27 @@
+# @see https://github.com/peaceiris/actions-label-commenter
+name: PR Label Commenter
+
+## NOTE
+# How to work with other labeler actions?
+# @see https://github.com/peaceiris/actions-label-commenter#work-with-other-auto-label-actions
+
+on:
+  workflow_call:
+  workflow_dispatch:
+  issues:
+    types: [labeled, unlabeled]
+  pull_request:
+    types: [labeled, unlabeled]
+
+permissions:
+  contents: read
+  issues: write
+  pull-requests: write
+
+jobs:
+  label-commenter:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: peaceiris/actions-label-commenter@b29c85e430e50b3a0b8251a0dcc77c3e74f4c7b8
