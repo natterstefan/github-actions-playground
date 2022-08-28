@@ -2,6 +2,8 @@
 name: PR Labeler
 
 on:
+  workflow_call:
+  workflow_dispatch:
   pull_request:
     types: [opened]
 
@@ -15,8 +17,7 @@ jobs:
       # @see https://github.com/TimonVS/pr-labeler-action/issues/58
       pull-requests: write # for TimonVS/pr-labeler-action to add labels in PR
     steps:
-      - uses: TimonVS/pr-labeler-action@b47402568cce2e3e871eba362e7268d5a8fb54cc
-        with:
-          configuration-path: .github/pr-labeler.yml # optional, .github/pr-labeler.yml is the default value
+      # SHA mentioned in https://github.com/TimonVS/pr-labeler-action/issues/33
+      - uses: TimonVS/pr-labeler-action@bd0b592a410983316a454e3d48444608f028ec8e
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
