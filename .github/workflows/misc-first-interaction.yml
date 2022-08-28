@@ -3,7 +3,7 @@ name: Misc First Interaction
 on: [workflow_call, workflow_dispatch, pull_request, issues]
 
 jobs:
-  checklist:
+  main:
     permissions:
       issues: write
       pull-requests: write
