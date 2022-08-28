@@ -17,6 +17,11 @@
 
 ## Actions I would like to test in the future
 
+- licensed
+  - Examples:
+    [.github/workflows/update_and_check_licenses.yml](https://github.com/actions/labeler/blob/e54e5b338fbd6e6cdb5d60f51c22335fc57c401e/.github/workflows/update_and_check_licenses.yml)
+    and
+    [here](https://github.com/peaceiris/actions-label-commenter/commit/cc255e22e031205d18932cb76c5968fe893812c6)
 - [Ilshidur/action-discord: 🚀 GitHub Action that sends a Discord message.](https://github.com/Ilshidur/action-discord)
 - [tylermurry/github-pr-landmine: A simple, language agnostic solution for creating manual mutation tests directly in-line with a GitHub pull request](https://github.com/tylermurry/github-pr-landmine)
 - [vijaykramesh/pr-lint-action: A GitHub Action that verifies your pull request contains a reference to a Jira ticket.](https://github.com/vijaykramesh/pr-lint-action)

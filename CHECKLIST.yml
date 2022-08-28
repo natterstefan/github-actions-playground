@@ -3,4 +3,6 @@ paths:
   "README.md":
     - Did you remember to add or update the all contributors list?
   ".github/workflows/**":
-    - Did you add links to the GitHub actions repository or marketplace page?
+    - Did you add links to the GitHub actions repository or marketplace page
+      when adding new actions?
+    - Did you take care of adding `permissions` to new jobs and steps?
