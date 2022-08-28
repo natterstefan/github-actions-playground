@@ -1,5 +1,5 @@
 # @see https://github.com/TimonVS/pr-labeler-action
-name: PR Labeler
+name: PR Branch Labeler
 
 on:
   workflow_call:
