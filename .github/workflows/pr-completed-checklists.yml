@@ -1,6 +1,22 @@
 name: PR Completed Checklists
 
-on: [workflow_call, workflow_dispatch, pull_request, issues]
+on:
+  workflow_call:
+  workflow_dispatch:
+  pull_request:
+    types: [
+        edited,
+        synchronize,
+        # As soon as reviews are requested we make sure all checklists are
+        # resolved
+        review_requested,
+        ready_for_review,
+      ]
+  issues:
+    types: [opened, edited, deleted]
+  issue_comment:
+  pull_request_review:
+  pull_request_review_comment:
 
 jobs:
   review-checklists:
@@ -8,7 +24,7 @@ jobs:
       issues: write
       pull-requests: write
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 5
     steps:
       # @see https://github.com/mheap/require-checklist-action
       - uses: mheap/require-checklist-action@2d826a59e6d499e89051c8e569c5daafbd67818d

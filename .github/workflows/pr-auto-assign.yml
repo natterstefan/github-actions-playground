@@ -1,0 +1,17 @@
+# @see https://github.com/kentaro-m/auto-assign-action
+name: PR Auto Assign
+
+on:
+  workflow_call:
+  workflow_dispatch:
+  pull_request:
+    types: [opened, ready_for_review]
+
+jobs:
+  check-auto-assign:
+    permissions:
+      pull-requests: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: kentaro-m/auto-assign-action@4ad7df6422393863602727609e1d4645e1d15552

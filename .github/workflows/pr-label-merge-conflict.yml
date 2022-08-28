@@ -1,0 +1,23 @@
+name: PR Approved Label
+
+on: [workflow_call, workflow_dispatch, pull_request]
+
+jobs:
+  check-merge-conflict:
+    permissions:
+      pull-requests: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      # @see https://github.com/eps1lon/actions-label-merge-conflict
+      - uses: eps1lon/actions-label-merge-conflict@c456fea12157020436b8e8fe561d51e053380e0b
+        with:
+          # By default, pull requests from a fork do not have access to the
+          # Secrets and are given a Github token with read permission, which
+          # means that the tags cannot be updated.
+          continueOnMissingPermissions: true
+          dirtyLabel: "needs rebase"
+          repoToken: "${{ secrets.GITHUB_TOKEN }}"
+          commentOnDirty:
+            "This pull request has conflicts, please resolve those first before
+            requesting a review of the pull request."
