@@ -15,6 +15,6 @@ jobs:
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           issue-message:
-            "# Hello\nLooks like this is the first issue you created."
+            "Hello\nLooks like this is the first issue you created."
           pr-message:
-            "# Hello\nLooks like this is the first pull request you created."
+            "Hello\nLooks like this is the first pull request you created."

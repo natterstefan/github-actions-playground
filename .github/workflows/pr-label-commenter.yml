@@ -12,6 +12,8 @@ on:
     types: [labeled, unlabeled]
   pull_request:
     types: [labeled, unlabeled]
+  discussion:
+    types: [labeled, unlabeled]
 
 permissions:
   contents: read
@@ -25,4 +27,5 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - uses: peaceiris/actions-label-commenter@b29c85e430e50b3a0b8251a0dcc77c3e74f4c7b8
+      # hash taken from here: https://github.com/peaceiris/actions-label-commenter/blob/b29c85e430e50b3a0b8251a0dcc77c3e74f4c7b8/.github/workflows/label-commenter.yml#L27
+      - uses: peaceiris/actions-label-commenter@c2d00660c86f2b9ed0fb35b372c451558eba85b3
