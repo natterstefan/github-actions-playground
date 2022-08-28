@@ -13,6 +13,8 @@
 
 ## Resources
 
+- GitHub Actions Docs
+  - [Events that trigger workflows - GitHub Docs](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows)
 - [Awesome Actions | Project-Awesome.org](https://project-awesome.org/sdras/awesome-actions)
 
 ## Actions I would like to test in the future

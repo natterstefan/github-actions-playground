@@ -4,11 +4,16 @@ on:
   workflow_call:
   workflow_dispatch:
   pull_request:
-    types: [opened, edited, synchronize]
+    types: [
+        edited,
+        synchronize,
+        # As soon as reviews are requested we make sure all checklists are
+        # resolved
+        review_requested,
+        ready_for_review,
+      ]
   issues:
     types: [opened, edited, deleted]
-  # required when pr-checklist.yml is used or it will not run again, when
-  # comments including checklists are updated.
   issue_comment:
   pull_request_review:
   pull_request_review_comment:
