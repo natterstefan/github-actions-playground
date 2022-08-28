@@ -1,0 +1,4 @@
+# Config file of .github/workflows/pr-labeler-branch-name.yml workflow
+enhancement: ["feature/*", "feat/*"]
+bug: fix/*
+chore: chore/*

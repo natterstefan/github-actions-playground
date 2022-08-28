@@ -1,0 +1,28 @@
+# @see https://github.com/lannonbr/issue-label-manager-action
+#
+# Alternatives
+# @see https://github.com/micnncim/action-label-syncer (supports sync with other
+# repository)
+name: Repo Label Management
+
+on: [workflow_call, workflow_dispatch, pull_request, issues]
+
+permissions:
+  contents: read
+
+jobs:
+  labels:
+    permissions:
+      contents: read
+      issues: read
+      pull-requests: read
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v3
+      - uses: lannonbr/issue-label-manager-action@7890981d0e8f2922211a7fe2c391c53cb3037cb4
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          # will delete any labels that aren't in the .github/labels.json
+          delete: true

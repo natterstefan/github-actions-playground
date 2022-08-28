@@ -2,6 +2,9 @@ name: Misc First Interaction
 
 on: [workflow_call, workflow_dispatch, pull_request, issues]
 
+permissions:
+  contents: read
+
 jobs:
   main:
     permissions:
