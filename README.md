@@ -30,6 +30,7 @@
   (but for different SaaS tools than Jira)
 - [gregsdennis/dependencies-action: A GitHub Action that enforces PR dependencies](https://github.com/gregsdennis/dependencies-action)
 - [kamilkisiela/graphql-inspector: 🕵️‍♀️ Validate schema, get schema change notifications, validate operations, find breaking changes, look for similar types, schema coverage](https://github.com/kamilkisiela/graphql-inspector)
+- [actions/dependency-review-action: A GitHub Action for detecting vulnerable dependencies in your PRs](https://github.com/actions/dependency-review-action)
 
 ## License
 
