@@ -35,6 +35,10 @@
 - [ ] [kamilkisiela/graphql-inspector: 🕵️‍♀️ Validate schema, get schema change notifications, validate operations, find breaking changes, look for similar types, schema coverage](https://github.com/kamilkisiela/graphql-inspector)
 - [ ] [actions/dependency-review-action: A GitHub Action for detecting vulnerable dependencies in your PRs](https://github.com/actions/dependency-review-action)
 - [ ] https://github.com/marketplace/actions/lint-action
+- [ ] Slack Notifications
+  - https://github.com/slackapi/slack-github-action
+  - https://github.com/act10ns/slack
+  - https://github.com/rtCamp/action-slack-notify
 
 ## License
 
