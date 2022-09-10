@@ -40,6 +40,7 @@
   - https://github.com/act10ns/slack
   - https://github.com/rtCamp/action-slack-notify
 - [ ] Try GitHub Action Summaries https://github.blog/2022-05-09-supercharging-github-actions-with-job-summaries/
+- [ ] https://github.blog/2022-07-26-introducing-even-more-security-enhancements-to-npm/
 
 ## License
 
