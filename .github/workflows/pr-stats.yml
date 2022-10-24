@@ -20,4 +20,4 @@ jobs:
     timeout-minutes: 5
     steps:
       # @see https://github.com/flowwer-dev/pull-request-stats
-      - uses: flowwer-dev/pull-request-stats@ac5c6eb7c6f48b0e12253dd6cd511a81fd088570
+      - uses: flowwer-dev/pull-request-stats@f63f28140b8a6638c9a7d845cd797da996236006
