@@ -18,6 +18,6 @@ jobs:
       pull-requests: write # for TimonVS/pr-labeler-action to add labels in PR
     steps:
       # SHA mentioned in https://github.com/TimonVS/pr-labeler-action/issues/33
-      - uses: TimonVS/pr-labeler-action@bd0b592a410983316a454e3d48444608f028ec8e
+      - uses: TimonVS/pr-labeler-action@8b99f404a073744885d8021d1de4e40c6eaf38e2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
