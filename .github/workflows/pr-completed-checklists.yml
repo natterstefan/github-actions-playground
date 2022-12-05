@@ -30,7 +30,7 @@ jobs:
     timeout-minutes: 5
     steps:
       # @see https://github.com/mheap/require-checklist-action
-      - uses: mheap/require-checklist-action@2d826a59e6d499e89051c8e569c5daafbd67818d
+      - uses: mheap/require-checklist-action@280a63f7756e7032b35617f06388e3c7ddae76bc
         with:
           # If this is true and there are no checklists detected, the action
           # will fail
