@@ -14,7 +14,7 @@ jobs:
     timeout-minutes: 5
     steps:
       # @see https://github.com/actions/first-interaction
-      - uses: actions/first-interaction@dafa9ae191faeec3f6b68445495727a43143b42a
+      - uses: actions/first-interaction@64bdb230668432c6ad905f3080df6d00e4d32229
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           issue-message:
