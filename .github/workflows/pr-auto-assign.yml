@@ -17,4 +17,4 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - uses: kentaro-m/auto-assign-action@4ad7df6422393863602727609e1d4645e1d15552
+      - uses: kentaro-m/auto-assign-action@0f54499433a7c535289cdb1aad8d4bc9a64bd192
