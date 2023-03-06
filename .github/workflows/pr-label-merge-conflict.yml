@@ -13,7 +13,7 @@ jobs:
     timeout-minutes: 5
     steps:
       # @see https://github.com/eps1lon/actions-label-merge-conflict
-      - uses: eps1lon/actions-label-merge-conflict@c456fea12157020436b8e8fe561d51e053380e0b
+      - uses: eps1lon/actions-label-merge-conflict@5ee63cf79e9ee6d218dbfe3e2befee0efaf77f2d
         with:
           # By default, pull requests from a fork do not have access to the
           # Secrets and are given a Github token with read permission, which
